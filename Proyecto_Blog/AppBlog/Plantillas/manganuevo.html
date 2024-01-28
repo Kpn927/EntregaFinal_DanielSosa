@@ -1,0 +1,13 @@
+{% extends "Manga.html" %}
+{%load static%}
+
+{% block contenido %}
+<div class="text-center my-5">
+    <h1 class="fw-bolder">Aqui puedes agregar tus mangas</h1>
+</div>
+
+    <form action="" method="post">{% csrf_token %}
+    {{Mi_formu.as_p}}
+    <input type="submit" value="Agregar">
+
+{%endblock%}
